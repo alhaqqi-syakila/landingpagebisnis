@@ -67,7 +67,7 @@ document.addEventListener('DOMContentLoaded', function() {
             top: 80px;
             left: 0;
             right: 0;
-            background: white;
+            background: #10002b;
             padding: 20px;
             box-shadow: 0 10px 20px rgba(0,0,0,0.1);
             z-index: 1000;
