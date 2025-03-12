@@ -64,10 +64,10 @@ document.addEventListener('DOMContentLoaded', function() {
             display: flex;
             flex-direction: column;
             position: absolute;
-            top: 80px;
+            top: 78px;
             left: 0;
             right: 0;
-            background: #10002b;
+            background: #2a2a28;
             padding: 20px;
             box-shadow: 0 10px 20px rgba(0,0,0,0.1);
             z-index: 1000;

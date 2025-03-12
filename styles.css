@@ -7,14 +7,14 @@
 }
 
 :root {
-    --primary-color: #5d09b7;
-    --secondary-color: #4361ee;
-    --accent-color: #3a0ca3;
-    --dark-color: #f2f2f2;
-    --light-color: #10002b;
-    --light2-color: #24153b;
-    --gray-color: #ffffff;
-    --text-color: #cccccc;
+    --primary-color: #6500fd;     
+    --secondary-color: #005be3;  
+    --accent-color: #0cb6ea;     
+    --light-color: #fff7ed;    
+    --dark2-color: #333333;       
+    --dark-color: #2a2a28;       
+    --text-color: #ffffff;        
+    --gray-color: #cccccc;
     --transition: all 0.3s ease;
     --shadow: 0 4px 20px rgba(31, 31, 32, 0.1);
     --border-radius: 8px;
@@ -26,7 +26,7 @@ html {
 
 body {
     color: var(--text-color);
-    background-color: var(--light2-color);
+    background-color: var(--dark2-color);
     line-height: 1.6;
 }
 
@@ -63,11 +63,11 @@ section {
 .section-header h2 {
     font-size: 2.5rem;
     margin-bottom: 10px;
-    color: var(--dark-color);
+    color: var(--light-color);
 }
 
 .section-header p {
-    color: var(--gray-color);
+    color: var(--text-color);
     max-width: 700px;
     margin: 0 auto;
     font-size: 1.1rem;
@@ -81,6 +81,7 @@ section {
     font-weight: 600;
     transition: var(--transition);
     text-align: center;
+    outline: none;
 }
 
 .primary {
@@ -110,7 +111,7 @@ header {
     top: 0;
     left: 0;
     width: 100%;
-    background: var(--light-color);
+    background: var(--dark-color);
     z-index: 1000;
     box-shadow: var(--shadow);
     backdrop-filter: blur(10px);
@@ -171,7 +172,10 @@ nav {
     padding: 0 10%;
     margin: 0 auto;
     padding-top: 80px;
-    background-color: var(--light2-color);
+    background-image: url('/images/hero1.jpg');
+    background-position: top;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 .hero-content {
@@ -184,9 +188,9 @@ nav {
 
 .hero-content h1 {
     font-size: 3rem;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
     line-height: 1.2;
-    color: var(--dark-color);
+    color: var(--light-color);
 }
 
 .hero-content p {
@@ -215,12 +219,12 @@ nav {
 
 /* SERVICES SECTION */
 #layanan {
-    background-color: var(--light-color);
+    background-color: var(--dark-color);
     padding: 100px 0;
 }
 
 .section-header p {
-    color: var(--text-color);
+    color: var(--gray-color);
 }
 
 .services-container {
@@ -233,7 +237,7 @@ nav {
 }
 
 .service-card {
-    background: var(--light2-color);
+    background: var(--dark2-color);
     padding: 40px 30px;
     border-radius: var(--border-radius);
     text-align: center;
@@ -261,7 +265,7 @@ nav {
     max-width: 1200px;
     margin: 0 auto;
     padding: 100px 20px;
-    background-color: var(--light2-color);
+    background-color: var(--dark2-color);
 }
 
 .features-container {
@@ -275,10 +279,13 @@ nav {
     align-items: flex-start;
     gap: 20px;
     margin-bottom: 30px;
+    background-color: var(--dark-color);
+    padding: 3rem 2rem;
+    border-radius: 1rem;
 }
 
 .feature-icon {
-    background: rgba(58, 12, 163, 0.1);
+    background: var(--primary-color);
     width: 70px;
     height: 70px;
     border-radius: 50%;
@@ -290,7 +297,7 @@ nav {
 
 .feature-icon i {
     font-size: 1.8rem;
-    color: var(--primary-color);
+    color: var(--light-color);
 }
 
 .feature-content h3 {
@@ -300,7 +307,7 @@ nav {
 
 /* PORTFOLIO SECTION */
 #portofolio {
-    background-color: var(--light-color);
+    background-color: var(--dark-color);
     padding: 100px 0;
 }
 
@@ -383,7 +390,7 @@ nav {
     right: -10%;
     width: 20%;
     height: 2px;
-    background-color: var(--gray-color);
+    background-color: var(--texxt-color);
 }
 
 .step-number {
@@ -407,7 +414,7 @@ nav {
 
 /* TESTIMONIALS SECTION */
 #testimoni {
-    background-color: var(--light-color);
+    background-color: var(--dark-color);
     padding: 100px 0;
 }
 
@@ -421,7 +428,7 @@ nav {
 }
 
 .testimonial {
-    background: var(--light2-color);
+    background: var(--dark2-color);
     padding: 40px;
     border-radius: var(--border-radius);
     box-shadow: var(--shadow);
@@ -432,7 +439,7 @@ nav {
     position: absolute;
     top: 20px;
     left: 20px;
-    color: rgba(58, 12, 163, 0.1);
+    color: var(--primary-color);
     font-size: 3rem;
 }
 
@@ -462,7 +469,7 @@ nav {
 .client-info p {
     margin: 0;
     font-size: 0.9rem;
-    color: var(--gray-color);
+    color: var(--text-color);
 }
 
 /* CONTACT SECTION */
@@ -481,12 +488,12 @@ nav {
 .contact-info h2 {
     font-size: 2rem;
     margin-bottom: 20px;
-    color: var(--dark-color);
+    color: var(--light-color);
 }
 
 .contact-info > p {
     margin-bottom: 30px;
-    color: var(--gray-color);
+    color: var(--text-color);
 }
 
 .info-item {
@@ -510,7 +517,7 @@ nav {
 .social-media a {
     width: 45px;
     height: 45px;
-    background: var(--light-color);
+    background: var(--dark-color);
     border-radius: 50%;
     display: flex;
     align-items: center;
@@ -527,7 +534,7 @@ nav {
 }
 
 .contact-form {
-    background: var(--light-color);
+    background: var(--dark-color);
     padding: 40px;
     border-radius: var(--border-radius);
 }
@@ -547,7 +554,7 @@ nav {
 .form-group textarea {
     width: 100%;
     padding: 15px;
-    border: 1px solid #ddd;
+    border: none;
     border-radius: var(--border-radius);
     outline: none;
     transition: var(--transition);
@@ -569,7 +576,7 @@ nav {
 
 /* FOOTER */
 footer {
-    background: var(--light-color);
+    background: var(--dark-color);
     color: white;
     padding: 70px 0 20px;
 }
