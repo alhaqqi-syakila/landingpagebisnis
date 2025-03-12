@@ -8,7 +8,7 @@
 
 :root {
     --primary-color: #6500fd;     
-    --secondary-color: #005be3;  
+    --secondary-color: #2e00fd;  
     --accent-color: #0cb6ea;     
     --light-color: #fff7ed;    
     --dark2-color: #333333;       
@@ -81,7 +81,8 @@ section {
     font-weight: 600;
     transition: var(--transition);
     text-align: center;
-    outline: none;
+    outline: 0;
+    border: none;
 }
 
 .primary {
@@ -91,7 +92,7 @@ section {
 
 .primary:hover {
     background: var(--secondary-color);
-    transform: translateY(-3px);
+    transform: scale(1.01);
 }
 
 .secondary {
