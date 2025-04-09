@@ -11,8 +11,8 @@
     --secondary-color: #2e00fd;  
     --accent-color: #0cb6ea;     
     --light-color: #fff7ed;    
-    --dark2-color: #333333;       
-    --dark-color: #2a2a28;       
+    --dark2-color:#2a2a2a;       
+    --dark-color: #252525;    
     --text-color: #ffffff;        
     --gray-color: #cccccc;
     --transition: all 0.3s ease;
@@ -26,7 +26,9 @@ html {
 
 body {
     color: var(--text-color);
-    background-color: var(--dark2-color);
+    background: linear-gradient(-45deg, #1e3c72, #194694, #7224a7, #295d95);
+    background-size: 400% 400%;
+    animation: gradientMove 5s ease infinite;
     line-height: 1.6;
 }
 
@@ -92,7 +94,7 @@ section {
 
 .primary:hover {
     background: var(--secondary-color);
-    transform: scale(1.01);
+    transform: scale(1.03);
 }
 
 .secondary {
@@ -102,8 +104,8 @@ section {
 }
 
 .secondary:hover {
-    background: rgba(58, 12, 163, 0.1);
-    transform: translateY(-3px);
+    background: rgba(58, 12, 163, 0.1);  
+    transform: scale(1.03);
 }
 
 /* NAVIGATION */
@@ -173,7 +175,7 @@ nav {
     padding: 0 10%;
     margin: 0 auto;
     padding-top: 80px;
-    background-image: url('/images/hero1.jpg');
+    background-image: url('./images/hero1.jpg');
     background-position: top;
     background-size: cover;
     background-repeat: no-repeat;
@@ -220,9 +222,21 @@ nav {
 
 /* SERVICES SECTION */
 #layanan {
-    background-color: var(--dark-color);
     padding: 100px 0;
+    background-color: var(--dark-color);
 }
+
+@keyframes gradientMove {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
 
 .section-header p {
     color: var(--gray-color);
@@ -248,7 +262,7 @@ nav {
 
 .service-card:hover {
     transform: translateY(-10px);
-}
+    box-shadow: rgba(85, 0, 255, 0.308) 0px 10px 36px 0px, rgba(0, 73, 162, 0.184) 0px 0px 0px 1px;}
 
 .service-card i {
     font-size: 2.5rem;
@@ -266,7 +280,6 @@ nav {
     max-width: 1200px;
     margin: 0 auto;
     padding: 100px 20px;
-    background-color: var(--dark2-color);
 }
 
 .features-container {
@@ -388,16 +401,16 @@ nav {
     content: '';
     position: absolute;
     top: 40px;
-    right: -10%;
-    width: 20%;
-    height: 2px;
-    background-color: var(--texxt-color);
+    right: -50%;
+    width: 85%;
+    height: 4px;
+    background-color: var(--dark2-color);
 }
 
 .step-number {
     width: 80px;
     height: 80px;
-    background: var(--primary-color);
+    background: var(--dark2-color);
     color: white;
     border-radius: 50%;
     display: flex;
@@ -560,6 +573,7 @@ nav {
     outline: none;
     transition: var(--transition);
     font-size: 1rem;
+    background-color: var(--dark2-color);
 }
 
 .form-group input:focus,
